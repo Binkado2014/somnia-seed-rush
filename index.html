@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Somnia Seed Rush</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🌱 Somnia Seed Rush</h1>
+    <p>Tap the seed as fast as you can before time runs out!</p>
+    <button id="startButton">Start Game</button>
+
+    <div id="gameArea" class="hidden">
+      <div id="timer">Time: 10</div>
+      <div id="score">Score: 0</div>
+      <button id="seed">🌾 Tap Me!</button>
+    </div>
+
+    <div id="endGame" class="hidden">
+      <h2>⏳ Time's Up!</h2>
+      <p>Your Score: <span id="finalScore"></span></p>
+      <button onclick="location.reload()">Play Again</button>
+    </div>
+  </div>
+  <script src="game.js"></script>
+</body>
+</html>
